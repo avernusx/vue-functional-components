@@ -1,32 +1,13 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+  <div>
+    <router-link to="/benchmarks/common">Бенчмарк обычных компонентов</router-link>
+    <router-link to="/benchmarks/functional">Бенчмарк функциональных компонентов</router-link>
+    <router-link to="/slots/js">Слоты: js-шаблон</router-link>
+    <router-link to="/slots/jsx">Слоты: jsx-шаблон</router-link>
+    <router-link to="/slots/html">Слоты: html-шаблон</router-link>
+    <router-link to="/scoped-slots/js">Слоты с ограниченной областью видимости: js-шаблон</router-link>
+    <router-link to="/scoped-slots/jsx">Слоты с ограниченной областью видимости: jsx-шаблон</router-link>
+    <router-link to="/scoped-slots/html">Слоты с ограниченной областью видимости: html-шаблон</router-link>
     <router-view/>
-  </div>
+  </div>  
 </template>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
